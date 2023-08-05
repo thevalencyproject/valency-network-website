@@ -91,28 +91,35 @@ body {
     display: flex;
 }
 .info-consensus {
-    height: 30vh;
-    width: 30%;
     border-radius: 10px;
     border: 2px solid #ff6a00;
 }
 .info-encryption {
-    
+    border-radius: 10px;
+    border: 2px solid #fff700;
 }
 .info-ringsignatures {
-
+    border-radius: 10px;
+    border: 2px solid #2bff00;
 }
 .info-stealthaddresses {
-
+    border-radius: 10px;
+    border: 2px solid #ff0000;
 }
 .info-sharding {
-
+    border-radius: 10px;
+    border: 2px solid #00d5ff;
 }
 .info-containerization {
-
+    border-radius: 10px;
+    border: 2px solid #1100ff;
 }
 .info-onionrouting {
-
+    border-radius: 10px;
+    border: 2px solid #ff00b7;
+}
+#info-box {
+    padding: 10px;
 }
 
 
