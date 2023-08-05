@@ -8,7 +8,6 @@
 }
 
 body {
-    width: 100%;
     color: #ffffff;
     background-color: #2b2b2b;
 }
@@ -82,7 +81,7 @@ body {
 }
 
 .info-section {
-    height: 98vh;
+    height: 96vh;
     width: 100%;
 }
 .info-container {
@@ -92,12 +91,17 @@ body {
 
 
 .footer {
-    height: 2vh;
+    margin-top: -4vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 4vh;
     width: 100%;
+    font-size: 1.72vh;
 }
-#lhs {
-    float: left;
+.footer span {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
-#rhs {
-    float: right;
-}
+#lhs { float: left; }
+#rhs { float: right; }
