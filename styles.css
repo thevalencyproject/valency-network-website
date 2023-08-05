@@ -6,10 +6,12 @@
     box-sizing: border-box;
     font-family: 'JetBrains Mono', sans-serif;
 }
-
 body {
     color: #ffffff;
     background-color: #2b2b2b;
+}
+h1 {
+    font-size: 7vh;
 }
 
 
@@ -90,37 +92,48 @@ body {
 .info-container {
     display: flex;
 }
+#info-box { padding: 20px; }
+#info-box-bar {
+    width: 100%;
+    height: 4px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
 .info-consensus {
     border-radius: 10px;
-    border: 2px solid #ff6a00;
+    border: 2px solid #FF0000;
 }
+.info-consensus div { background-color: #FF0000; }
 .info-encryption {
     border-radius: 10px;
-    border: 2px solid #fff700;
+    border: 2px solid #008000;
 }
+.info-encryption div { background-color: #008000; }
 .info-ringsignatures {
     border-radius: 10px;
-    border: 2px solid #2bff00;
+    border: 2px solid #0000FF;
 }
+.info-ringsignatures div { background-color: #0000FF; }
 .info-stealthaddresses {
     border-radius: 10px;
-    border: 2px solid #ff0000;
+    border: 2px solid #00FFFF;
 }
+.info-stealthaddresses div { background-color: #00FFFF; }
 .info-sharding {
     border-radius: 10px;
-    border: 2px solid #00d5ff;
+    border: 2px solid #FF00FF;
 }
+.info-sharding div { background-color: #FF00FF; }
 .info-containerization {
     border-radius: 10px;
-    border: 2px solid #1100ff;
+    border: 2px solid #FFFF00;
 }
+.info-containerization div { background-color: #FFFF00; }
 .info-onionrouting {
     border-radius: 10px;
-    border: 2px solid #ff00b7;
+    border: 2px solid #FFA500;
 }
-#info-box {
-    padding: 10px;
-}
+.info-onionrouting div { background-color: #FFA500; }
 
 
 
