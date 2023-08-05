@@ -39,7 +39,7 @@ body {
     position: absolute;
     z-index:1;
     transform: translateY(-50%);
-    top: 90%
+    top: 90%;
 }
 .banner-section button {
     width:12vw;
@@ -81,17 +81,43 @@ body {
 }
 
 .info-section {
+    position: relative;
     height: 96vh;
     width: 100%;
+    z-index: 1;
+    background: #2b2b2b;
 }
 .info-container {
     display: flex;
+}
+.info-consensus {
+    height: 30vh;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid #ff6a00;
+}
+.info-encryption {
+    
+}
+.info-ringsignatures {
+
+}
+.info-stealthaddresses {
+
+}
+.info-sharding {
+
+}
+.info-containerization {
+
+}
+.info-onionrouting {
+
 }
 
 
 
 .footer {
-    margin-top: -4vh;
     position: absolute;
     background: rgba(0,0,0,0.5);
     height: 4vh;
