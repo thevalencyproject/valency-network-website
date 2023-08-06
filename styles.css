@@ -102,6 +102,13 @@ h1 {
 #info-box { 
     padding: 20px; 
     max-width: 30vw;
+    height: 38.5vh;
+    text-align: center;
+    flex-grow: 1;
+}
+#info-box:hover {
+    flex-grow: 3;
+    max-width: 90vw;
 }
 #info-box-bar {
     width: 100%;
@@ -110,39 +117,53 @@ h1 {
     margin-bottom: 1vh;
 }
 .info-consensus {
+    order: 1;
     border-radius: 10px;
     border: 2px solid #FF0000;
 }
+.info-consensus:hover { order: 0; }
 .info-consensus div { background-color: #FF0000; }
 .info-encryption {
+    order: 1;
     border-radius: 10px;
     border: 2px solid #008000;
 }
+.info-encryption:hover { order: 0; }
 .info-encryption div { background-color: #008000; }
 .info-ringsignatures {
+    order: 1;
     border-radius: 10px;
     border: 2px solid #0000FF;
 }
+.info-ringsignatures:hover { order: -1; }
 .info-ringsignatures div { background-color: #0000FF; }
 .info-stealthaddresses {
+    order: 3;
     border-radius: 10px;
     border: 2px solid #00FFFF;
 }
+.info-stealthaddresses:hover { order: 2; }
 .info-stealthaddresses div { background-color: #00FFFF; }
 .info-sharding {
+    order: 3;
     border-radius: 10px;
     border: 2px solid #FF00FF;
 }
+.info-sharding:hover { order: 2; }
 .info-sharding div { background-color: #FF00FF; }
 .info-containerization {
+    order: 3;
     border-radius: 10px;
     border: 2px solid #FFFF00;
 }
+.info-containerisation:hover { order: 2; }
 .info-containerization div { background-color: #FFFF00; }
 .info-onionrouting {
+    order: 5;
     border-radius: 10px;
     border: 2px solid #FFA500;
 }
+.info-ringsignatures:hover { order: 4; }
 .info-onionrouting div { background-color: #FFA500; }
 
 
