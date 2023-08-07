@@ -177,6 +177,12 @@ h1 {
 .funding-section {
     text-align: center;
 }
+.funding-text {
+    border: 2px solid #0000FF;
+    padding: 30px;
+    width: 50vw;
+    margin: auto;
+}
 
 
 
