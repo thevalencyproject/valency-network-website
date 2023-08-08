@@ -1,4 +1,4 @@
-var addPixel = function(color, startPos) {
+function addPixel(color, startPos) {
     $('.backdrop').prepend(
       "<div class='pixel' "+
       "style='background-color: rgba("+
@@ -15,17 +15,16 @@ var addPixel = function(color, startPos) {
       "0.55); "+
       "'></div>"
     );
-},
+}
 
 
-randNum = function(min, max) {
+function randNum(min, max) {
   return Math.floor(
     Math.random() * (max - min) + min
   );
-},
+}
 
-
-fireflyEffect = function() {
+function fireflyEffect() {
   var flying = setInterval(function(){
     var angle = randNum(0, 361),
         dist = randNum(100, 450),

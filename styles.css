@@ -8,13 +8,13 @@
 }
 body {
     color: #ffffff;
-    background-color: #2b2b2b;
+    background-color: #0A0F14;
 }
 h1 {
     font-size: 7vh;
 }
 p {
-    font-size: 2vh;
+    font-size: 1.75vh;
 }
 
 
@@ -91,11 +91,13 @@ p {
 
 
 
+/* Info Section */
 .info-section {
     position: relative;
     width: 100%;
     z-index: 1;
     background: #2b2b2b;
+    padding-bottom: 2vh;
 }
 .info-container {
     padding-top: 1.5em;
@@ -187,6 +189,7 @@ p {
 
 
 
+/* Funding Section */
 .funding-section {
     text-align: center;
 }
@@ -199,10 +202,12 @@ p {
 .funding-text h3 {
     text-align: left;
     margin-top: 1vh;
+    font-size: 2.5vh;
 }
 
 
 
+/* Footer */
 .footer {
     position: absolute;
     background: rgba(0,0,0,0.5);
@@ -218,6 +223,17 @@ p {
 #lhs { float: left; }
 #rhs { float: right; }
 
+
+
+/* Separators */
+.separator {
+    width: 100%;
+    height: 4vh;
+    background-color: #164dff
+}
+
+
+ 
 /* Firefly Effect JS */
 .pixel {
     display: none;
@@ -227,12 +243,12 @@ p {
     position: absolute;
     background-color: rgb(128,128,128);
 }
-.backdrop {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(10,15,20);
+.backdrop {     /* position: absolute is what was causing issues in prev commits */
+    overflow-x: hidden;
+    
+    /* Blur from glass background */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: #0A0F14;
+    
 }
