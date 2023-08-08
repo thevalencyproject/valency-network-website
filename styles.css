@@ -19,6 +19,7 @@ p {
 
 
 
+/* Efficient Parallax Effect - No JS! */
 .parallax-wrapper {
     height: 100vh;
     overflow-y: auto;
@@ -36,6 +37,9 @@ p {
     height:100vh;
 }
 
+
+
+/* Banner Section */
 .banner-section {
     height: 100vh;
     width: 100%;
@@ -84,6 +88,8 @@ p {
 .scroll-text {
     transition: all 1s;
 }
+
+
 
 .info-section {
     position: relative;
@@ -211,3 +217,22 @@ p {
 }
 #lhs { float: left; }
 #rhs { float: right; }
+
+/* Firefly Effect JS */
+.pixel {
+    display: none;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: rgb(128,128,128);
+}
+.backdrop {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(10,15,20);
+}
