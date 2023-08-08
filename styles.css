@@ -13,6 +13,9 @@ body {
 h1 {
     font-size: 7vh;
 }
+p {
+    font-size: 2vh;
+}
 
 
 
@@ -43,8 +46,8 @@ h1 {
     transform: translateY(-50%);
     top: 90%;
 }
-.banner-section button {
-    width:12vw;
+.normal-button button {
+    width:14vw;
     font-size:1.5vh;
     padding:15px 0;
     text-align:center;
@@ -60,11 +63,11 @@ h1 {
     overflow:hidden;
     font-weight:bold;
 }
-.banner-section button:hover {
+.normal-button button:hover {
     background-color: #ff6a00;
     border: 2px solid #ff6a00;
 }
-.banner-section span {
+.normal-button span {
     background:#ff6a00;
     height:100%;
     width:0;
@@ -75,7 +78,7 @@ h1 {
     z-index:-1;
     transition:280ms;
 }
-.banner-section button:hover span {
+.normal-button button:hover span {
     width: 100%;
 }
 .scroll-text {
@@ -111,6 +114,10 @@ h1 {
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(0, 0, 0, 0.16);
+    overflow-y: hidden;
+}
+#info-box p {
+    text-align: left;
 }
 #info-box:hover {
     flex-grow: 3;
@@ -182,6 +189,10 @@ h1 {
     padding: 30px;
     width: 50vw;
     margin: auto;
+}
+.funding-text h3 {
+    text-align: left;
+    margin-top: 1vh;
 }
 
 
