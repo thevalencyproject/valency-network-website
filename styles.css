@@ -1,3 +1,6 @@
+/* This file is a part of The Valency Project which is released under the GNU Lesser General Public License v2.1
+   Go to https://github.com/thevalencyproject/valency-network-website/blob/main/LICENSE for further license details. */
+
 /* Global Styles */
 * {
     margin: 0;
@@ -8,18 +11,14 @@
 }
 body {
     color: #ffffff;
-    background-color: #0A0F14;
+    background-color: #2b2b2b;
 }
 h1 {
     font-size: 7vh;
 }
-p {
-    font-size: 1.75vh;
-}
 
 
 
-/* Efficient Parallax Effect - No JS! */
 .parallax-wrapper {
     height: 100vh;
     overflow-y: auto;
@@ -37,9 +36,6 @@ p {
     height:100vh;
 }
 
-
-
-/* Banner Section */
 .banner-section {
     height: 100vh;
     width: 100%;
@@ -50,8 +46,8 @@ p {
     transform: translateY(-50%);
     top: 90%;
 }
-.normal-button button {
-    width:14vw;
+.banner-section button {
+    width:12vw;
     font-size:1.5vh;
     padding:15px 0;
     text-align:center;
@@ -67,11 +63,11 @@ p {
     overflow:hidden;
     font-weight:bold;
 }
-.normal-button button:hover {
+.banner-section button:hover {
     background-color: #ff6a00;
     border: 2px solid #ff6a00;
 }
-.normal-button span {
+.banner-section span {
     background:#ff6a00;
     height:100%;
     width:0;
@@ -82,22 +78,18 @@ p {
     z-index:-1;
     transition:280ms;
 }
-.normal-button button:hover span {
+.banner-section button:hover span {
     width: 100%;
 }
 .scroll-text {
     transition: all 1s;
 }
 
-
-
-/* Info Section */
 .info-section {
     position: relative;
     width: 100%;
     z-index: 1;
     background: #2b2b2b;
-    padding-bottom: 2vh;
 }
 .info-container {
     padding-top: 1.5em;
@@ -122,10 +114,6 @@ p {
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(0, 0, 0, 0.16);
-    overflow-y: hidden;
-}
-#info-box p {
-    text-align: left;
 }
 #info-box:hover {
     flex-grow: 3;
@@ -189,7 +177,6 @@ p {
 
 
 
-/* Funding Section */
 .funding-section {
     text-align: center;
 }
@@ -199,15 +186,9 @@ p {
     width: 50vw;
     margin: auto;
 }
-.funding-text h3 {
-    text-align: left;
-    margin-top: 1vh;
-    font-size: 2.5vh;
-}
 
 
 
-/* Footer */
 .footer {
     position: absolute;
     background: rgba(0,0,0,0.5);
@@ -222,33 +203,3 @@ p {
 }
 #lhs { float: left; }
 #rhs { float: right; }
-
-
-
-/* Separators */
-.separator {
-    width: 100%;
-    height: 4vh;
-    background-color: #164dff
-}
-
-
- 
-/* Firefly Effect JS */
-.pixel {
-    display: none;
-    height: 4px;
-    width: 4px;
-    border-radius: 2px;
-    position: absolute;
-    background-color: rgb(128,128,128);
-}
-.backdrop {     /* position: absolute is what was causing issues in prev commits */
-    overflow-x: hidden;
-    
-    /* Blur from glass background */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-color: #0A0F14;
-    
-}
