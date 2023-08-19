@@ -161,12 +161,17 @@ h1 {
 
 .funding-section {
     text-align: center;
-}
-.funding-text {
-    border: 2px solid #0000FF;
+    background: rgba(0, 0, 0, 0.54);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
     padding: 30px;
     width: 50vw;
+    height: 50vh;
     margin: auto;
+    margin-bottom: 5vh;
 }
 
 
