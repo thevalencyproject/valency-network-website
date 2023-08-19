@@ -94,7 +94,6 @@ h1 {
 .info-container {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
@@ -103,21 +102,18 @@ h1 {
     width: 100%;
 }
 #info-box { 
+    margin: auto;
     padding: 20px; 
-    max-width: 30vw;
-    height: 38.5vh;
+    margin-bottom: 2vh;
+    width: 90%;
+    min-height: 20vh;
     text-align: center;
-    flex-grow: 1;
     background: rgba(0, 0, 0, 0.54);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(0, 0, 0, 0.16);
-}
-#info-box:hover {
-    flex-grow: 3;
-    max-width: 90vw;
 }
 #info-box-bar {
     width: 100%;
@@ -126,53 +122,39 @@ h1 {
     margin-bottom: 1vh;
 }
 .info-consensus {
-    order: 1;
     border-radius: 10px;
     border: 2px solid #FF0000;
 }
-.info-consensus:hover { order: 0; }
 .info-consensus div { background-color: #FF0000; }
 .info-encryption {
-    order: 1;
     border-radius: 10px;
     border: 2px solid #008000;
 }
-.info-encryption:hover { order: 0; }
 .info-encryption div { background-color: #008000; }
 .info-ringsignatures {
-    order: 1;
     border-radius: 10px;
     border: 2px solid #0000FF;
 }
-.info-ringsignatures:hover { order: 0; }
 .info-ringsignatures div { background-color: #0000FF; }
 .info-stealthaddresses {
-    order: 3;
     border-radius: 10px;
     border: 2px solid #00FFFF;
 }
-.info-stealthaddresses:hover { order: 2; }
 .info-stealthaddresses div { background-color: #00FFFF; }
 .info-sharding {
-    order: 3;
     border-radius: 10px;
     border: 2px solid #FF00FF;
 }
-.info-sharding:hover { order: 2; }
 .info-sharding div { background-color: #FF00FF; }
 .info-containerization {
-    order: 3;
     border-radius: 10px;
     border: 2px solid #FFFF00;
 }
-.info-containerisation:hover { order: 2; }
 .info-containerization div { background-color: #FFFF00; }
 .info-onionrouting {
-    order: 5;
     border-radius: 10px;
     border: 2px solid #FFA500;
 }
-.info-ringsignatures:hover { order: 4; }
 .info-onionrouting div { background-color: #FFA500; }
 
 
