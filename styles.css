@@ -46,7 +46,7 @@ h1 {
     transform: translateY(-50%);
     top: 90%;
 }
-.banner-section button {
+button {
     width:12vw;
     font-size:1.5vh;
     padding:15px 0;
@@ -63,7 +63,7 @@ h1 {
     overflow:hidden;
     font-weight:bold;
 }
-.banner-section button:hover {
+button:hover {
     background-color: #ff6a00;
     border: 2px solid #ff6a00;
 }
@@ -217,6 +217,20 @@ h1 {
     height: 50vh;
     margin: auto;
     margin-bottom: 4vh;
+}
+.funding-section span {
+    background:#ff6a00;
+    height:100%;
+    width:0;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:280ms;
+}
+.funding-section button:hover span {
+    width: 100%;
 }
 
 
