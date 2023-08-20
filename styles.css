@@ -85,11 +85,31 @@ h1 {
     transition: all 1s;
 }
 
+
+/* About Section Animation Background */
+@keyframes move-it {
+    0% {
+        background-position: initial;
+    }
+    100% {
+        background-position: 100px 0px;
+    }
+}
 .info-section {
     position: relative;
     width: 100%;
     z-index: 1;
-    background: #2b2b2b;
+
+    /* Background Animation */
+    background: repeating-linear-gradient(
+    45deg,
+    #ffa200,
+    #ffa200 5%,
+    #cb8100 5%,
+    #cb8100 10%
+    );
+    background-size: 100px 100px;
+    animation: move-it 2s linear infinite;
 }
 .info-container {
     padding-top: 1.5em;
