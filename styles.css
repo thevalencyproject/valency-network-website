@@ -140,42 +140,8 @@ button:hover {
     height: 4px;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: #FF0000;
 }
-.info-consensus {
-    border-radius: 10px;
-    border: 2px solid #FF0000;
-}
-.info-consensus div { background-color: #FF0000; }
-.info-encryption {
-    border-radius: 10px;
-    border: 2px solid #008000;
-}
-.info-encryption div { background-color: #008000; }
-.info-ringsignatures {
-    border-radius: 10px;
-    border: 2px solid #0000FF;
-}
-.info-ringsignatures div { background-color: #0000FF; }
-.info-stealthaddresses {
-    border-radius: 10px;
-    border: 2px solid #00FFFF;
-}
-.info-stealthaddresses div { background-color: #00FFFF; }
-.info-sharding {
-    border-radius: 10px;
-    border: 2px solid #FF00FF;
-}
-.info-sharding div { background-color: #FF00FF; }
-.info-containerization {
-    border-radius: 10px;
-    border: 2px solid #FFFF00;
-}
-.info-containerization div { background-color: #FFFF00; }
-.info-onionrouting {
-    border-radius: 10px;
-    border: 2px solid #FFA500;
-}
-.info-onionrouting div { background-color: #FFA500; }
 
 
 
