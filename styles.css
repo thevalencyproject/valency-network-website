@@ -103,10 +103,10 @@ button:hover {
     /* Background Animation */
     background: repeating-linear-gradient(
     45deg,
-    #ffa200,
-    #ffa200 5%,
-    #cb8100 5%,
-    #cb8100 10%
+    #008cff,
+    #008cff 5%,
+    #0180e8 5%,
+    #0180e8 10%
     );
     background-size: 100px 100px;
     animation: move-it 2s linear infinite;
