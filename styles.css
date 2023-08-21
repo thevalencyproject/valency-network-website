@@ -110,6 +110,16 @@ button:hover {
     );
     background-size: 100px 100px;
     animation: move-it 2s linear infinite;
+    padding-top: 3vh;
+}
+.brief-overview {
+    width: 90vw;
+    margin: auto;
+    text-align: left;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    font-size: 2vh;
 }
 .info-container {
     padding-top: 1.5em;
