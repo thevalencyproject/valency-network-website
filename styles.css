@@ -113,7 +113,7 @@ button:hover {
     padding-top: 3vh;
 }
 .brief-overview {
-    width: 90vw;
+    width: 97.5vw;
     margin: auto;
     text-align: left;
     padding: 20px;
@@ -144,8 +144,8 @@ button:hover {
     padding: 20px; 
     margin-bottom: 2vh;
     
-    height: 35vh;
-    flex-basis: 40%;
+    height: 38vh;
+    flex-basis: 30%;
     text-align: center;
 
     background: rgba(0, 0, 0, 0.36);
