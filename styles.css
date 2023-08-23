@@ -7,14 +7,20 @@
     padding: 0;
     font-weight: 400;
     box-sizing: border-box;
-    font-family: 'JetBrains Mono', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 body {
     color: #ffffff;
     background-color: #2b2b2b;
 }
 h1 {
-    font-size: 7vh;
+    font-size: 8.3vh;
+    text-transform: uppercase;
+    font-weight: 700
+}
+p {
+    font-size: 2vh;
+    font-weight: 100;
 }
 
 
@@ -29,7 +35,7 @@ h1 {
     transform-style:preserve-3d;
     z-index:-1000;
     transform:translateZ(-10px) scale(2);
-    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(images/background.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(images/background.jpg);
     background-size:cover;
     background-position:center;
     width:100%;
@@ -54,8 +60,8 @@ button {
     margin:20px 10px;
     border-radius:25px;
     font-weight:700;
-    border:2px solid #ff6a00;
-    background:transparent;
+    border:2px solid #0180e8;
+    background:rgba(0,0,0,0.3);
     color:#fff;
     cursor:pointer;
     text-transform:uppercase;
@@ -64,11 +70,11 @@ button {
     font-weight:bold;
 }
 button:hover {
-    background-color: #ff6a00;
-    border: 2px solid #ff6a00;
+    background-color: #0180e8;
+    border: 2px solid #0180e8;
 }
 .banner-section span {
-    background:#ff6a00;
+    background:#0180e8;
     height:100%;
     width:0;
     border-radius:25px;
@@ -100,16 +106,10 @@ button:hover {
     width: 100%;
     z-index: 1;
 
-    /* Background Animation */
-    background: repeating-linear-gradient(
-    45deg,
-    #008cff,
-    #008cff 5%,
-    #0180e8 5%,
-    #0180e8 10%
-    );
-    background-size: 100px 100px;
-    animation: move-it 2s linear infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
     padding-top: 3vh;
 }
 #brief-overview {
@@ -144,7 +144,7 @@ button:hover {
     padding: 20px; 
     margin-bottom: 2vh;
     
-    height: 38vh;
+    height: 50vh;
     flex-basis: 30%;
     text-align: center;
 
@@ -160,7 +160,7 @@ button:hover {
     height: 4px;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    background-color: #FF0000;
+    background-color: #0180e8;
 }
 
 
@@ -169,6 +169,16 @@ button:hover {
     width: 100%;
     height: 1vh;
     background-color: #ffffff;
+    
+    background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 5%,
+    #cdcdcd 5%,
+    #cdcdcd 10%
+    );
+    background-size: 100px 100px;
+    animation: move-it 2s linear infinite;
 }
 
 
@@ -184,12 +194,23 @@ button:hover {
         background-position: 0% 50%;
     }
 }
-.funding-section {
+.funding-section {/*
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;*/
+    
+    /* Background Animation */
+    background: repeating-linear-gradient(
+    45deg,
+    #008cff,
+    #008cff 5%,
+    #0180e8 5%,
+    #0180e8 10%
+    );
+    background-size: 100px 100px;
+    animation: move-it 2s linear infinite;
+    
     padding-top: 15vh;
-
     width: 100%;
     height: 80vh;
 }
@@ -208,7 +229,7 @@ button:hover {
     margin-bottom: 4vh;
 }
 .funding-section span {
-    background:#ff6a00;
+    background:#0180e8;
     height:100%;
     width:0;
     border-radius:25px;
@@ -235,10 +256,11 @@ button:hover {
 
 .footer {
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.85);
     height: 4vh;
     width: 100%;
     font-size: 1.72vh;
+    margin-top: -4vh;
 }
 .footer span {
     margin-top: 1vh;
