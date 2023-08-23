@@ -60,13 +60,13 @@
             <!--- Home Screen Buttons (displayed in the middle of the screen) -->
             <button type="button" class="scroll-text" onclick="window.open('https://github.com/thevalencyproject/valency-wallet', '_blank')"><span></span>Download Wallet</button>
             <button type="button" class="scroll-text" onclick="window.open('https://github.com/thevalencyproject/valency-node', '_blank')"><span></span>Download Node</button>
-            <button type="button" class="scroll-text" onclick="window.open('https://network.valency.dev/documentation', '_blank')"><span></span>Read the Documentation</button>
+            <button type="button" class="scroll-text" onclick="window.open('https://valency.dev/The-Valency-Project.pdf', '_blank')"><span></span>Read the Whitepaper</button>
             <button type="button" class="scroll-text" onclick="window.open('https://discord.gg/xkGUnXuV9v', '_blank')"><span></span>Join our Discord</button>
         </div>
 
         <!--- Info Section -->
         <div class="info-section">
-            <div class="brief-overview">    <!--- A brief overview of the network -->
+            <div id="brief-overview">    <!--- A brief overview of the network -->
                 <p>The Valency Network is a Peer-to-Peer (P2P) Decentralised Network that functions as a
                    replacement for Bitcoin and Ethereum, offering enhanced capabilities by rectifying the 
                    critical shortcomings, whilst retaining their fundamental principles. The network is Open-Source and
@@ -75,7 +75,7 @@
                    networks.</p>
             </div>
             <div class="info-container">
-                <div class="info-consensus" id="info-box">              <!--- Hybrid Proof-of-Stake/Proof-of-Bandwidth Consensus Mechanism -->
+                <div id="info-box">              <!--- Hybrid Proof-of-Stake/Proof-of-Bandwidth Consensus Mechanism -->
                     <h2>Hybrid Consensus Mechanism</h2>
                     <div id="info-box-bar"></div>
                     <p>In the hybrid Proof-of-Stake/Proof-of-Bandwidth consensus mechanism, validators are selected based on both their staked
@@ -85,7 +85,7 @@
                        provides a more balanced and robust approach to consensus that takes into account both token
                        ownership and network connectivity.</p>
                 </div>
-                <div class="info-encryption" id="info-box">             <!--- Quantum Proof Encryption -->
+                <div id="info-box">             <!--- Quantum Proof Encryption -->
                     <h2>NTRUencrypt Asymmetric Encryption</h2>
                     <div id="info-box-bar"></div>
                     <p>The Valency Network utilises a Post-Quantum Asymmetric Encryption Algorithm called
@@ -93,14 +93,14 @@
                        of prime-based, completely eliminating the possibility of solving using Shor’s Algorithm on a
                        quantum computer.</p>
                 </div>
-                <div class="info-ringsignatures" id="info-box">         <!--- Traceable Ring Signatures -->
+                <div id="info-box">         <!--- Traceable Ring Signatures -->
                     <h2>Traceable Ring Signatures</h2>
                     <div id="info-box-bar"></div>
                     <p>On the Valency Network, Traceable Ring Signatures allow the sender of a transaction on the
                        Valency Network to remain completely anonymous whilst still retaining the ability for nodes to
                        verify the transaction.</p>
                 </div>
-                <div class="info-stealthaddresses" id="info-box">       <!--- Stealth Addresses -->
+                <div id="info-box">       <!--- Stealth Addresses -->
                     <h2>Stealth Addresses</h2>
                     <div id="info-box-bar"></div>
                     <p>Stealth Addresses are a privacy-enhancing technique used in the Valency Network. They enable
@@ -108,7 +108,7 @@
                        private key, making it extremely difficult to link transactions to the actual recipient. This
                        increases privacy and anonymity of the users.</p>
                 </div>
-                <div class="info-sharding" id="info-box">               <!--- Sharding -->
+                <div id="info-box">               <!--- Sharding -->
                     <h2>Sharding</h2>
                     <div id="info-box-bar"></div>
                     <p>Sharding is a scaling solution for blockchains that aims to improve the efficiency and
@@ -118,7 +118,7 @@
                        blockchain systems, where every node is required to validate and store all transactions, leading
                        to slow transaction times high resource usage.</p>
                 </div>
-                <div class="info-containerization" id="info-box">       <!--- Containerization -->
+                <div id="info-box">       <!--- Containerization -->
                     <h2>Containerization</h2>
                     <div id="info-box-bar"></div>
                     <p>One of the main bandwidth limitations the network will have to cope with it when a new node is
@@ -129,7 +129,7 @@
                        nodes before sending to other nodes. This compressed data can then be decompressed and processed
                        normally. This decreases the time it takes for a node to get set up on the network.</p>
                 </div>
-                <div class="info-onionrouting" id="info-box">           <!--- Onion Routing -->
+                <div id="info-box">           <!--- Onion Routing -->
                     <h2>Onion Routing</h2>
                     <div id="info-box-bar"></div>
                     <p>Onion Routing is used in the Valency Network to remove governmental/malicious control of
@@ -139,7 +139,7 @@
                        entities to trace the IP address of the message sender and message contents through
                        eavesdropping and traffic analysis attacks.</p>
                 </div>
-                <div class="smart-contracts" id="info-box">             <!--- Smart Contracts -->
+                <div id="info-box">             <!--- Smart Contracts -->
                     <h2>Smart Contracts</h2>
                     <div id="info-box-bar"></div>
                     <p>The Valency Network provides support for the Solidity smart contract programming language.
@@ -147,7 +147,7 @@
                        Ethereum and Solana to the Valency Network. In addition to Solidity, the Valency Network
                        supports a diverse range of other Turing-complete programming languages.</p>
                 </div>
-                <div class="exchange-backed" id="info-box">             <!--- Backed by Exchange -->
+                <div id="info-box">             <!--- Backed by Exchange -->
                     <h2>Backed by Exchange</h2>
                     <div id="info-box-bar"></div>
                     <p>The Valency Network acts as a backbone for the Valency Exchange - the other half of this 

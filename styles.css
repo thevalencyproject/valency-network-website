@@ -112,7 +112,7 @@ button:hover {
     animation: move-it 2s linear infinite;
     padding-top: 3vh;
 }
-.brief-overview {
+#brief-overview {
     width: 97.5vw;
     margin: auto;
     text-align: left;
