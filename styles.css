@@ -117,6 +117,8 @@ button:hover {
     margin: auto;
     text-align: left;
     padding: 20px;
+    padding-left: 15vw;
+    padding-right: 15vw;
     border: 2px solid #ffffff;
     font-size: 2vh;
 
