@@ -111,9 +111,6 @@ button:hover {
     animation: gradient 15s ease infinite;
 
     padding-top: 3vh;
-    border-top:  3px solid #ffffff;
-    border-left:  3px solid #ffffff;
-    border-right:  3px solid #ffffff;
 }
 #brief-overview {
     width: 97.5vw;
@@ -195,22 +192,11 @@ button:hover {
 
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
-.funding-section {/*
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;*/
-    
-    /* Background Animation */
+.funding-section {
     background: repeating-linear-gradient(
     45deg,
     #008cff,
