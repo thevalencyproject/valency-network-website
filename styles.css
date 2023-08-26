@@ -111,6 +111,9 @@ button:hover {
     animation: gradient 15s ease infinite;
 
     padding-top: 3vh;
+    border-top:  3px solid #ffffff;
+    border-left:  3px solid #ffffff;
+    border-right:  3px solid #ffffff;
 }
 #brief-overview {
     width: 97.5vw;
