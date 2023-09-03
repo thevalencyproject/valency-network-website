@@ -249,6 +249,9 @@ button:hover {
     margin-top: 4vh;
     margin-bottom: -1vh;
 }
+#funding-button {
+    width: 20vw;
+}
 
 
 
